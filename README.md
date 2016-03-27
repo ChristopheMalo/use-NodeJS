@@ -14,3 +14,5 @@ Use v5.9.1 Stable version
 - Code the HTTP server
 - Start the server: node first-app/js/server.js
 - Stop the server: ctrl+c
+- Return HTML
+- Call specific pages with parameters
