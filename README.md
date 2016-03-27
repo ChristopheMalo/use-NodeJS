@@ -1,6 +1,6 @@
-# use-NodeJS
+# Use Node.js
 
-Some tests with NodeJS
+Some examples of how to use Node.js
 
 ## Memento NodeJS
 - Install (on mac): download pgk file and install (Global install)
