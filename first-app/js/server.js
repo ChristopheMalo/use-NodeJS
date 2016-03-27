@@ -7,11 +7,13 @@
  * @author: Christophe Malo
  * @version: 1.0.0
  */
-var http = require('http'); // Call http Node.js lib to create HTTP Server
-var url  = require('url');  // Call module url
+var http        = require('http');          // Call http Node.js lib to create HTTP Server
+var url         = require('url');           // Call module url
+var querystring = require('querystring');   // Call querystring to use parameters
 
 var server = http.createServer(function(request, response) {
-    var page = url.parse(request.url).pathname;
+    var page       = url.parse(request.url).pathname;
+    var parameters = querystring.parse(url.parse(request.url).query);
     
     console.log(page); // Debug - Return the page in Terminal
     
@@ -32,7 +34,7 @@ var server = http.createServer(function(request, response) {
             '</html>'
         );
     }
-    else if (page === '/contact')
+    else if (page === '/contact' && 'firstname' in parameters && 'lastname' in parameters)
     {
         response.write(
             '<!DOCTYPE html>' +
@@ -42,6 +44,7 @@ var server = http.createServer(function(request, response) {
             '       <title>Contact page!</title>' +
             '    </head>' +
             '    <body>' +
+            '       <p>Hi ' + parameters['firstname'] + ' ' + parameters['lastname'] + '</p>' +
             '       <p>Use the form to contact us.</p>' +
             '    </body>' +
             '</html>'
