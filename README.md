@@ -1,6 +1,7 @@
 # Use Node.js
 
 Some examples of how to use Node.js
+Use v5.9.1 Stable version
 
 ## Memento NodeJS
 - Install (on mac): download pgk file and install (Global install)
