@@ -16,3 +16,7 @@ Use v5.9.1 Stable version
 - Stop the server: ctrl+c
 - Return HTML
 - Call specific pages with parameters
+
+## Events
+- Listen events on close server
+- Emit events
