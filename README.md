@@ -39,6 +39,8 @@ Use v5.9.1 Stable version
 ## Framework
 - Use Express.js
 - install the frameworks, go in project folder: npm install express
+- Code route
+- Code parameters
 
 ## Copyright
 **Inspired by :** [An Openclassrooms course](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js) - **Adapted and directed by :** Christophe Malo
