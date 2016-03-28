@@ -7,9 +7,9 @@
  * @author: Christophe Malo
  * @version: 1.0.0
  */
-var http        = require('http');          // Call http Node.js lib to create HTTP Server
+var http        = require('http');          // Call http Node.js module to create HTTP Server
 var url         = require('url');           // Call module url
-var querystring = require('querystring');   // Call querystring to use parameters
+var querystring = require('querystring');   // Call module querystring to use parameters
 
 var server = http.createServer(function(request, response) {
     var page       = url.parse(request.url).pathname;
