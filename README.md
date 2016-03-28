@@ -40,7 +40,9 @@ Use v5.9.1 Stable version
 - Use Express.js
 - install the frameworks, go in project folder: npm install express
 - Code route
-- Code parameters
+- Code dynamic routes
+- Use templates
+- Middlewares
 
 ## Copyright
 **Inspired by :** [An Openclassrooms course](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js) - **Adapted and directed by :** Christophe Malo
