@@ -10,6 +10,10 @@ Use v5.9.1 Stable version
 - Run file: node path-to/file.js
 - Leave: ctrl+d
 
+## Memento NPM
+- search module in the console: npm search [search-word]
+- install module, go to the project folder to install locally: npm install [module-name]
+
 ## First app
 - Code the HTTP server
 - Start the server: node first-app/js/server.js
@@ -25,6 +29,7 @@ Use v5.9.1 Stable version
 - Create module
 - Use NPM
 - Declare and publish its module
+- Install and use markdown module
 
 ## Copyright
 **Inspired by :** [An Openclassrooms course](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js) - **Adapted and directed by :** Christophe Malo
