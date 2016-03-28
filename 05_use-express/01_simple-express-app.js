@@ -29,4 +29,20 @@ application.use(function(request, response, next) {
     response.end('404 not found');
 });
 
+// Concatenate the verb
+/*
+application.get('/', function(request, response) {
+    // Code
+})
+.get('/contact', function(request, response) {
+    // Code
+})
+.get('/company/team', function(request, response) {
+    // Code
+})
+.use(function(request, response, next){
+    // Code
+});
+*/
+
 application.listen(8080);
