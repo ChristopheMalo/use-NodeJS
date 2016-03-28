@@ -44,5 +44,8 @@ Use v5.9.1 Stable version
 - Use templates
 - Middlewares
 
+## Socket.io
+- Use socket.io
+
 ## Copyright
 **Inspired by :** [An Openclassrooms course](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js) - **Adapted and directed by :** Christophe Malo
