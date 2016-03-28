@@ -21,5 +21,10 @@ Use v5.9.1 Stable version
 - Listen events on close server
 - Emit events
 
+## Modules
+- Create module
+- Use NPM
+- Declare and publish its module
+
 ## Copyright
 **Inspired by :** [An Openclassrooms course](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js) - **Adapted and directed by :** Christophe Malo
