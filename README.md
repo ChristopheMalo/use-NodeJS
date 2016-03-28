@@ -13,6 +13,8 @@ Use v5.9.1 Stable version
 ## Memento NPM
 - search module in the console: npm search [search-word]
 - install module, go to the project folder to install locally: npm install [module-name]
+- Use an executable provided by the module, install the module globally: npm install [module-name] -g
+- Update module, go in folder project: npm update 
 
 ## First app
 - Code the HTTP server
