@@ -16,6 +16,7 @@ Use v5.9.1 Stable version
 - Use an executable provided by the module, install the module globally: npm install [module-name] -g
 - Update module, go in folder project: npm update 
 - with package dependencies, install or update: npm install or npm update
+- Publish module on NPM: create first user -> npm adduser and npm publish
 
 ## First app
 - Code the HTTP server
@@ -34,6 +35,10 @@ Use v5.9.1 Stable version
 - Declare and publish its module
 - Install and use markdown module
 - Manage dependencies with package.json file
+
+## Framework
+- Use Express.js
+- install the frameworks, go in project folder: npm install express
 
 ## Copyright
 **Inspired by :** [An Openclassrooms course](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js) - **Adapted and directed by :** Christophe Malo
