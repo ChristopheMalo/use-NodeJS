@@ -19,9 +19,9 @@ application.get('/contact', function(request,response) {
    response.end('A Contact page');
 });
 
-application.get('/company/team', function(request, response) {
+application.get('/company/team/:memberName', function(request, response) {
     response.setHeader('Content-Type', 'text/plain');
-    response.end('Our team');
+    response.end('Our member team: ' + request.params.memberName);
 });
 
 application.use(function(request, response, next) {
