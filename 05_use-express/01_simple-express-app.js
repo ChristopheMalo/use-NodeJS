@@ -24,6 +24,12 @@ application.get('/company/team/:memberName', function(request, response) {
     response.end('Our member team: ' + request.params.memberName);
 });
 
+// Test page with EJS (template)
+application.get('/company/adress/:town/:number', function(request, response) {
+    var contactName = ['Chris', 'Lalie', 'Emma'];
+    response.render('address.ejs', {thetown: request.params.town, number: request.params.number, contactName: contactName});
+});
+
 application.use(function(request, response, next) {
     response.setHeader('Content-Type', 'text/plain');
     response.end('404 not found');
