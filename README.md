@@ -15,6 +15,7 @@ Use v5.9.1 Stable version
 - install module, go to the project folder to install locally: npm install [module-name]
 - Use an executable provided by the module, install the module globally: npm install [module-name] -g
 - Update module, go in folder project: npm update 
+- with package dependencies, install or update: npm install or npm update
 
 ## First app
 - Code the HTTP server
@@ -32,6 +33,7 @@ Use v5.9.1 Stable version
 - Use NPM
 - Declare and publish its module
 - Install and use markdown module
+- Manage dependencies with package.json file
 
 ## Copyright
 **Inspired by :** [An Openclassrooms course](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js) - **Adapted and directed by :** Christophe Malo
