@@ -20,3 +20,6 @@ Use v5.9.1 Stable version
 ## Events
 - Listen events on close server
 - Emit events
+
+## Copyright
+**Inspired by :** [An Openclassrooms course](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js) - **Adapted and directed by :** Christophe Malo
