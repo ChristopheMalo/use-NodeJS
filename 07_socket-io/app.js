@@ -26,4 +26,4 @@ socketio.sockets.on('connection', function(socket)
     console.log('A client is connected');
 });
 
-server.listen(3000);
+server.listen(8080);
