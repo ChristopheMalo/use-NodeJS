@@ -23,8 +23,15 @@ var socketio = require('socket.io').listen(server);
 // Display client connection in console
 socketio.sockets.on('connection', function(socket)
 {
-    console.log('A client is connected');
-    socket.emit('message', 'Your are connected');
+    console.log('A client is connected'); // Test the connection
+    
+    socket.emit('message', 'Your are connected'); // Send message to client
+    
+    // Receive message from client
+    socket.on('message', function(message)
+    {
+        console.log('A client send a message to server: ' + message);
+    });
 });
 
 server.listen(8080);

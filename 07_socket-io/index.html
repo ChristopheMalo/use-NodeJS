@@ -8,12 +8,18 @@
     <body>
         <h1>Communication with Socket.io</h1>
         <div>Test file</div>
+        <p><input type="button" value="Contact the server" id="contactserver"></p>
+        <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
         <script src="/socket.io/socket.io.js"></script>
         <script>
             var socket = io.connect('http://localhost:8080');
             socket.on('message', function(message)
             {
                 alert('The server has a message for you: ' + message);
+            });
+            $('#contactserver').click(function()
+            {
+                socket.emit('message', 'Server you\'re server, are you serious?');
             });
         </script>
     </body>
