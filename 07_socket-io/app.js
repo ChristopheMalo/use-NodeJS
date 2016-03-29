@@ -24,6 +24,7 @@ var socketio = require('socket.io').listen(server);
 socketio.sockets.on('connection', function(socket)
 {
     console.log('A client is connected');
+    socket.emit('message', 'Your are connected');
 });
 
 server.listen(8080);

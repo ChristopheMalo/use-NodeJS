@@ -10,9 +10,11 @@
         <div>Test file</div>
         <script src="/socket.io/socket.io.js"></script>
         <script>
-            var socket = socketio.connect('http://localhost:8080');
+            var socket = io.connect('http://localhost:8080');
+            socket.on('message', function(message)
+            {
+                alert('The server has a message for you: ' + message);
+            });
         </script>
     </body>
 </html>
-
-
