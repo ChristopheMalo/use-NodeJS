@@ -25,12 +25,23 @@ socketio.sockets.on('connection', function(socket)
 {
     console.log('A client is connected'); // Test the connection
     
-    socket.emit('message', 'Your are connected'); // Send message to client
+    // When client is connected, sends message to client
+    socket.emit('message', 'Your are connected');
     
-    // Receive message from client
+    // When new client is connected, sends message to all other clients connected
+    socket.broadcast.emit('message', 'Another client just connected');
+    
+    /* Receives nickname of visitor, after answer to prompt message
+       and click contact button, stores nickame in session variable */
+    socket.on('nickname', function(nickname)
+    {
+        socket.nickname = nickname;
+    });
+    
+    // Receive nickname and message from client
     socket.on('message', function(message)
     {
-        console.log('A client send a message to server: ' + message);
+        console.log(socket.nickname + ' talks me. A client send a message to server: ' + message);
     });
 });
 

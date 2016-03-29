@@ -13,10 +13,20 @@
         <script src="/socket.io/socket.io.js"></script>
         <script>
             var socket = io.connect('http://localhost:8080');
+            
+            // Ask the visitor nickname
+            var nickname = prompt('What is your nickname?');
+            
+            // Send nickname to server
+            socket.emit('nickname', nickname);
+            
+            // Display alert box when server sends message
             socket.on('message', function(message)
             {
                 alert('The server has a message for you: ' + message);
             });
+            
+            // Sends message to server when clicks on button
             $('#contactserver').click(function()
             {
                 socket.emit('message', 'Server you\'re server, are you serious?');
