@@ -9,6 +9,7 @@ Use v5.9.1 Stable version
 - Start the NodeJS interpreter: node
 - Run file: node path-to/file.js
 - Leave: ctrl+d
+- Debug: DEBUG=* node [app_file_name].js
 
 ## Memento NPM
 - search module in the console: npm search [search-word]
